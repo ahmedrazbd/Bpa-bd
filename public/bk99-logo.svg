@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe863" />
+      <stop offset="50%" stop-color="#d8fe49" />
+      <stop offset="100%" stop-color="#73c002" />
+    </linearGradient>
+    <linearGradient id="bgRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe863" />
+      <stop offset="40%" stop-color="#d8fe49" />
+      <stop offset="100%" stop-color="#006524" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Circular Badge -->
+  <g transform="translate(15, 12)">
+    <!-- Outer Glow Ring -->
+    <circle cx="48" cy="48" r="46" fill="url(#bgRing)" />
+    <!-- Inner Dark Circle -->
+    <circle cx="48" cy="48" r="41" fill="#003e17" />
+    <!-- Inner Glow Ring Accent -->
+    <circle cx="48" cy="48" r="37" fill="none" stroke="#d8fe49" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.6" />
+
+    <!-- Crown on top -->
+    <path d="M36 26 L42 34 L48 24 L54 34 L60 26 L58 37 L38 37 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+    <circle cx="36" cy="24" r="2" fill="#ffe863" />
+    <circle cx="48" cy="22" r="2.5" fill="#ffe863" />
+    <circle cx="60" cy="24" r="2" fill="#ffe863" />
+
+    <!-- BK Letters inside badge -->
+    <text x="48" y="66" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="-1">BK</text>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(130, 20)">
+    <!-- Bk Text -->
+    <text x="0" y="54" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">Bk</text>
+    <!-- 99 Text -->
+    <text x="70" y="54" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="54" font-weight="950" fill="url(#goldGrad)" letter-spacing="-1.5" filter="url(#glow)">99</text>
+
+    <!-- Subtitle: BANGLADESH OFFICIAL -->
+    <rect x="2" y="66" width="168" height="18" rx="4" fill="#00260e" stroke="#005e22" stroke-width="1" />
+    <text x="86" y="79" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#d8fe49" text-anchor="middle" letter-spacing="2.5">BANGLADESH</text>
+  </g>
+</svg>

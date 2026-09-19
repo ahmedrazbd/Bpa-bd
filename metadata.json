@@ -1,0 +1,6 @@
+{
+  "name": "Bk99 Mobile Activity & Promotions",
+  "description": "Bk99 mobile activity and promotions center page featuring welcome bonuses, deposit rewards, sports cashback, VIP perks, and claim actions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

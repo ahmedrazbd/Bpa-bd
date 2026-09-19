@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="goldGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe863" />
+      <stop offset="50%" stop-color="#d8fe49" />
+      <stop offset="100%" stop-color="#73c002" />
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe863" />
+      <stop offset="40%" stop-color="#d8fe49" />
+      <stop offset="100%" stop-color="#006524" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00471b" />
+      <stop offset="100%" stop-color="#00230d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)" stroke="#005e22" stroke-width="2" />
+
+  <!-- Outer Ring -->
+  <circle cx="64" cy="64" r="48" fill="url(#badgeGrad)" opacity="0.9" />
+  <!-- Inner Circle -->
+  <circle cx="64" cy="64" r="43" fill="#003514" />
+  <circle cx="64" cy="64" r="39" fill="none" stroke="#d8fe49" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.7" />
+
+  <!-- Crown on top -->
+  <path d="M50 36 L57 45 L64 33 L71 45 L78 36 L75 49 L53 49 Z" fill="url(#goldGradIcon)" />
+  <circle cx="50" cy="33" r="2.5" fill="#ffe863" />
+  <circle cx="64" cy="30" r="3" fill="#ffe863" />
+  <circle cx="78" cy="33" r="2.5" fill="#ffe863" />
+
+  <!-- BK text -->
+  <text x="64" y="87" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="950" fill="url(#goldGradIcon)" text-anchor="middle" letter-spacing="-1">BK</text>
+  <!-- 99 small tag badge -->
+  <rect x="44" y="93" width="40" height="15" rx="7.5" fill="#d8fe49" />
+  <text x="64" y="104.5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="950" fill="#003514" text-anchor="middle">99</text>
+</svg>
