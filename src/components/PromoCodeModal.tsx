@@ -35,7 +35,7 @@ export const PromoCodeModal: React.FC<PromoCodeModalProps> = ({
     }
   };
 
-  const sampleCodes = ['BK99VIP', 'WELCOME300', 'CRICKET1000', 'LUCKY99'];
+  const sampleCodes = ['BPABDVIP', 'RAZVIP', 'WELCOME300', 'CRICKET1000'];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs animate-fadeIn">
@@ -79,7 +79,7 @@ export const PromoCodeModal: React.FC<PromoCodeModalProps> = ({
                 setCode(e.target.value.toUpperCase());
                 if (feedback) setFeedback(null);
               }}
-              placeholder="e.g. BK99VIP"
+              placeholder="e.g. BPABDVIP"
               className="w-full px-3.5 py-2.5 rounded-xl bg-[#00260e] border border-[#005e22] text-white font-mono text-sm uppercase placeholder-emerald-600 focus:outline-none focus:border-[#d8fe49]"
             />
           </div>

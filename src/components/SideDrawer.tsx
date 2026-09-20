@@ -51,30 +51,22 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
       />
 
       {/* Drawer panel */}
-      <div className="relative w-4/5 max-w-xs h-full bg-[#002f12] text-white flex flex-col shadow-2xl border-r border-[#005e22] z-10 animate-slideRight">
+      <div className="relative w-4/5 max-w-xs h-full bg-[#031d0e] text-white flex flex-col shadow-2xl border-r border-[#0c4a25] z-10 animate-slideRight">
         {/* Drawer Header */}
-        <div className="flex items-center justify-between p-4 bg-[#00471b] border-b border-[#006524]">
+        <div className="flex items-center justify-between p-4 bg-[#02180b] border-b border-[#0c4a25]">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#ffe863] to-[#73c002] p-0.5 flex items-center justify-center">
-              <div className="w-full h-full bg-[#00471b] rounded-full flex items-center justify-center">
-                <span className="text-xs font-black text-[#d8fe49]">BK</span>
-              </div>
-            </div>
-            <div>
-              <div className="font-extrabold text-base leading-tight">
-                Bk<span className="text-[#d8fe49]">99</span>
-              </div>
-              <div className="text-[9px] text-emerald-300 uppercase tracking-widest font-semibold">
-                Official Gaming
-              </div>
-            </div>
+            <img
+              src="/bk99-logo.svg"
+              alt="Bpa-Bd Raz Agency"
+              className="h-10 w-auto object-contain drop-shadow-md"
+            />
           </div>
 
           <button
             id="close-sidebar-btn"
             type="button"
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#003614] text-emerald-200 hover:text-white"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-[#073319] text-amber-200 hover:text-white border border-[#135930]"
           >
             <X className="w-5 h-5" />
           </button>
@@ -266,28 +258,28 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             download="bk99-logo.svg"
             target="_blank"
             rel="noreferrer"
-            className="w-full flex items-center justify-between px-3 py-2 rounded-lg bg-[#00260e] hover:bg-[#003816] border border-[#005e22] text-[#d8fe49] text-xs font-semibold"
+            className="w-full flex items-center justify-between px-3 py-2 rounded-lg bg-[#062914] hover:bg-[#0c3d20] border border-[#165a31] text-amber-300 text-xs font-semibold shadow-xs transition-colors"
           >
             <div className="flex items-center gap-2">
-              <Download className="w-4 h-4 text-[#d8fe49]" />
-              <span>{language === 'bn' ? 'Bk99 লোগো ডাউনলোড করুন' : 'Download Bk99 Logo'}</span>
+              <Download className="w-4 h-4 text-amber-400" />
+              <span>{language === 'bn' ? 'Bpa-Bd লোগো ডাউনলোড করুন' : 'Download Bpa-Bd Logo'}</span>
             </div>
-            <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#00471b] text-emerald-300 font-mono">SVG</span>
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#02180b] text-amber-300 font-mono border border-amber-500/30">SVG</span>
           </a>
         </div>
 
         {/* Footer info & Language Toggle */}
-        <div className="p-3 bg-[#00260e] border-t border-[#005e22] flex items-center justify-between">
+        <div className="p-3 bg-[#02180b] border-t border-[#0c4a25] flex items-center justify-between">
           <button
             type="button"
             onClick={onToggleLanguage}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#00471b] text-emerald-200 text-xs font-semibold"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#073319] text-amber-100 text-xs font-semibold border border-[#135930]"
           >
-            <Globe className="w-3.5 h-3.5 text-[#d8fe49]" />
+            <Globe className="w-3.5 h-3.5 text-amber-400" />
             <span>{language === 'bn' ? 'বাংলা (BD)' : 'English (EN)'}</span>
           </button>
 
-          <span className="text-[10px] text-emerald-500 font-mono">v3.2.0 • Curacao</span>
+          <span className="text-[10px] text-emerald-400 font-mono">v3.2.0 • Curacao</span>
         </div>
       </div>
     </div>

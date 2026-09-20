@@ -41,12 +41,12 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     buttonTextBn: 'ইনভাইট করুন',
     buttonTextEn: 'INVITE NOW',
     contentBn: [
-      'আপনার বন্ধুদের Bk99-এ আমন্ত্রণ জানান এবং তারা ন্যূনতম ৳৫০০ প্রথম ডিপোজিট করলেই উভয়ই পাবেন চমৎকার বোনাস!',
+      'আপনার বন্ধুদের Bpa-Bd-এ আমন্ত্রণ জানান এবং তারা ন্যূনতম ৳৫০০ প্রথম ডিপোজিট করলেই উভয়ই পাবেন চমৎকার বোনাস!',
       'রেফারেল লিংক শেয়ার করে বন্ধুদের ফেসবুক, হোয়াটসঅ্যাপ এবং টেলিগ্রামের মাধ্যমে যোগ দিতে বলুন।',
       'আপনার রেফারেল যত বেশি খেলবে, তত বেশি আজীবন আনলিমিটেড রেভিনিউ শেয়ার কমিশন পাবেন।',
     ],
     contentEn: [
-      'Invite your friends to join Bk99! When your invited friend makes their first deposit of ৳500 or more, you will immediately receive ৳300 bonus cash.',
+      'Invite your friends to join Bpa-Bd! When your invited friend makes their first deposit of ৳500 or more, you will immediately receive ৳300 bonus cash.',
       'Share your unique referral code or invitation link through WhatsApp, Telegram, or Facebook.',
       'Earn lifetime tier commissions based on your referrals betting activity with zero cap.',
     ],
@@ -89,12 +89,12 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     buttonTextBn: 'ডিপোজিট ও দাবি করুন',
     buttonTextEn: 'DEPOSIT & CLAIM',
     contentBn: [
-      'Bk99 প্ল্যাটফর্মে যোগদানের জন্য আপনাকে স্বাগতম! আপনার প্রথম ডিপোজিটে পান ১০০% ম্যাচিং বোনাস।',
+      'Bpa-Bd প্ল্যাটফর্মে যোগদানের জন্য আপনাকে স্বাগতম! আপনার প্রথম ডিপোজিটে পান ১০০% ম্যাচিং বোনাস।',
       'bKash, Nagad এবং Rocket-এর মাধ্যমে দ্রুত ডিপোজিট সম্পন্ন করে তাত্ক্ষণিক বোনাস সক্রিয় করুন।',
       'প্রাগম্যাটিক প্লে, জিলি, পিজি সফট সহ জনপ্রিয় সব স্লট গেমে বোনাসটি ব্যবহার করা যাবে।',
     ],
     contentEn: [
-      'Welcome to the Bk99 family! Kickstart your gaming journey with a massive 100% match bonus on your first deposit.',
+      'Welcome to the Bpa-Bd family! Kickstart your gaming journey with a massive 100% match bonus on your first deposit.',
       'Deposit easily using bKash, Nagad, or Rocket to activate your welcome pack instantly.',
       'Applicable on all popular slots providers including Pragmatic Play, JILI, and PG Soft.',
     ],
@@ -137,7 +137,7 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     buttonTextBn: 'বেট করুন ও দাবি করুন',
     buttonTextEn: 'BET & CLAIM',
     contentBn: [
-      'বাংলাদেশ ক্রিকেটপ্রেমীদের জন্য Bk99 নিয়ে এসেছে এক্সক্লুসিভ ক্রিকেট বোনাস!',
+      'বাংলাদেশ ক্রিকেটপ্রেমীদের জন্য Bpa-Bd নিয়ে এসেছে এক্সক্লুসিভ ক্রিকেট বোনাস!',
       'লাইভ টি-টোয়েন্টি, ওয়ানডে এবং টেস্ট ম্যাচের যেকোনো বাজিতে পান নিশ্চিত ১৫% ম্যাচ বোনাস।',
       '৫ বা ততোধিক একুমুলেটর বেটে জিতলে অতিরিক্ত ২৫% ক্যাশ বুস্ট উপভোগ করুন।',
     ],
@@ -227,7 +227,7 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     buttonTextBn: 'স্বয়ংক্রিয় ক্রেডিট',
     buttonTextEn: 'AUTO CREDITED',
     contentBn: [
-      'আপনার আত্মবিশ্বাস ধরে রাখতে Bk99 দিচ্ছে সপ্তাহের নেট লসের ওপর সর্বোচ্চ ২০% পর্যন্ত ক্যাশব্যাক!',
+      'আপনার আত্মবিশ্বাস ধরে রাখতে Bpa-Bd দিচ্ছে সপ্তাহের নেট লসের ওপর সর্বোচ্চ ২০% পর্যন্ত ক্যাশব্যাক!',
       'প্রতি সোমবার সকাল ১০:০০ টায় আপনার ওয়ালেটে স্বয়ংক্রিয়ভাবে জমা হয়ে যাবে।',
     ],
     contentEn: [
@@ -252,8 +252,8 @@ export const PROMOTIONS_DATA: PromoItem[] = [
       textEn: 'APP REWARD 📱',
       bgClass: 'from-emerald-600 to-teal-800',
     },
-    titleBn: 'Bk99 অফিসিয়াল মোবাইল অ্যাপ ডাউনলোডে ফ্রি ৳১৮৮',
-    titleEn: 'Download Bk99 Mobile App & Get Free ৳188 Cash Bonus',
+    titleBn: 'Bpa-Bd অফিসিয়াল মোবাইল অ্যাপ ডাউনলোডে ফ্রি ৳১৮৮',
+    titleEn: 'Download Bpa-Bd Mobile App & Get Free ৳188 Cash Bonus',
     subtitleBn: 'অ্যান্ড্রয়েড অথবা আইওএস অ্যাপ ইনস্টল ও লগইন করলেই পুরস্কার',
     subtitleEn: 'Install our fast Android APK or iOS PWA to unlock exclusive mobile cash',
     bannerImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80',
@@ -267,7 +267,7 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     buttonTextBn: 'অ্যাপ ডাউনলোড করুন',
     buttonTextEn: 'DOWNLOAD APP',
     contentBn: [
-      'Bk99 মোবাইল অ্যাপ ইনস্টল করে যেকোনো স্থান থেকে দ্রুততম ও নিরাপদ গেমিং উপভোগ করুন।',
+      'Bpa-Bd মোবাইল অ্যাপ ইনস্টল করে যেকোনো স্থান থেকে দ্রুততম ও নিরাপদ গেমিং উপভোগ করুন।',
       'অ্যাপে লগইন করে প্রোফাইল ভেরিফিকেশন সম্পন্ন করলেই ফ্রি ৳১৮৮ বোনাস পাবেন।',
     ],
     contentEn: [
@@ -338,7 +338,7 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     },
     titleBn: 'ভিআইপি সদস্যদের জন্মদিনের বিশেষ উপহার ৳২৫,০০০ পর্যন্ত',
     titleEn: 'VIP Club Exclusive Birthday Mystery Gift Up To ৳25,000',
-    subtitleBn: 'আপনার বিশেষ দিনে Bk99 থেকে বিশেষ ক্যাশ উপহার ও ফ্রি স্পিন',
+    subtitleBn: 'আপনার বিশেষ দিনে Bpa-Bd থেকে বিশেষ ক্যাশ উপহার ও ফ্রি স্পিন',
     subtitleEn: 'Celebrate your birthday with guaranteed luxury gifts & exclusive limits',
     bannerImage: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80',
     startDate: '01/01/2026',
@@ -351,7 +351,7 @@ export const PROMOTIONS_DATA: PromoItem[] = [
     buttonTextBn: 'উপহার নিন',
     buttonTextEn: 'CLAIM GIFT',
     contentBn: [
-      'আপনার জন্মদিনের মাসে Bk99 ভিআইপি ক্লাব দিচ্ছে রাজকীয় উপহার।',
+      'আপনার জন্মদিনের মাসে Bpa-Bd ভিআইপি ক্লাব দিচ্ছে রাজকীয় উপহার।',
       'সিলভার, গোল্ড, প্লাটিনাম ও ডায়মন্ড স্তরের সদস্যরা পাবেন নগদ বোনাস এবং ৫০টি ফ্রি স্পিন।',
     ],
     contentEn: [
@@ -412,7 +412,7 @@ export const PROMOTIONS_DATA: PromoItem[] = [
 export const INITIAL_USER_SESSION: UserSession = {
   isLoggedIn: false,
   username: 'Shahriar99',
-  userId: 'BK9911-8842',
+  userId: 'BPA-8842',
   balance: 14500.50,
   currency: '৳',
   vipTier: 'Gold VIP',

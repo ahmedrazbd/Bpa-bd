@@ -22,8 +22,8 @@ export const LiveChatWidget: React.FC<LiveChatWidgetProps> = ({
       sender: 'cs',
       text:
         language === 'bn'
-          ? 'স্বাগতম Bk99 কাস্টমার সাপোর্টে! আজকের প্রমোশন বা বোনাস সম্পর্কে আপনার কোনো প্রশ্ন থাকলে আমাদের জানান।'
-          : 'Welcome to Bk99 24/7 Live Support! How can we assist you with promotions, bonuses, or deposits today?',
+          ? 'স্বাগতম Bpa-Bd (Raz Agency) কাস্টমার সাপোর্টে! আজকের প্রমোশন বা বোনাস সম্পর্কে আপনার কোনো প্রশ্ন থাকলে আমাদের জানান।'
+          : 'Welcome to Bpa-Bd (Raz Agency) 24/7 Live Support! How can we assist you with promotions, bonuses, or deposits today?',
       time: '12:00',
     },
   ]);
@@ -50,7 +50,7 @@ export const LiveChatWidget: React.FC<LiveChatWidgetProps> = ({
           reply = 'বিকাশ, নগদ ও রকেট দিয়ে সর্বনিম্ন ৳২০০ ইনস্ট্যান্ট ডিপোজিট করতে পারবেন। কোনো ফি কাটা হয় না!';
         } else {
           reply =
-            'ধন্যবাদ! আমাদের কাস্টমার সার্ভিস অফিসার আপনার অনুসন্ধান পর্যবেক্ষণ করছেন। Bk99-এর সাথে থাকার জন্য ধন্যবাদ!';
+            'ধন্যবাদ! আমাদের কাস্টমার সার্ভিস অফিসার আপনার অনুসন্ধান পর্যবেক্ষণ করছেন। Bpa-Bd-এর সাথে থাকার জন্য ধন্যবাদ!';
         }
       } else {
         if (userText.toLowerCase().includes('bonus') || userText.toLowerCase().includes('promo')) {
@@ -59,7 +59,7 @@ export const LiveChatWidget: React.FC<LiveChatWidgetProps> = ({
         } else if (userText.toLowerCase().includes('deposit')) {
           reply = 'Instant deposits are available via bKash, Nagad, and Rocket from minimum ৳200.';
         } else {
-          reply = 'Thank you! A dedicated agent is reviewing your query. Happy gaming on Bk99!';
+          reply = 'Thank you! A dedicated agent is reviewing your query. Happy gaming on Bpa-Bd!';
         }
       }
 
@@ -117,7 +117,7 @@ export const LiveChatWidget: React.FC<LiveChatWidgetProps> = ({
                   <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 rounded-full border border-[#00471b]" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-white">Bk99 Live CS</h4>
+                  <h4 className="font-bold text-sm text-white">Bpa-Bd Live CS</h4>
                   <p className="text-[10px] text-emerald-300">
                     {language === 'bn' ? 'অনলাইন সাপোর্ট • সাধারণত ১ মিনিটে উত্তর' : 'Online • Replies within 1 min'}
                   </p>

@@ -1,39 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
-    <linearGradient id="goldGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffe863" />
-      <stop offset="50%" stop-color="#d8fe49" />
-      <stop offset="100%" stop-color="#73c002" />
+    <!-- 24K Royal Gold Gradient -->
+    <linearGradient id="iconGold" x1="0%" y1="0%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#FFF8D6" />
+      <stop offset="22%" stop-color="#FDE073" />
+      <stop offset="50%" stop-color="#E8A317" />
+      <stop offset="80%" stop-color="#C27A06" />
+      <stop offset="100%" stop-color="#7A4800" />
     </linearGradient>
-    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffe863" />
-      <stop offset="40%" stop-color="#d8fe49" />
-      <stop offset="100%" stop-color="#006524" />
+
+    <!-- White Gloss -->
+    <linearGradient id="iconWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="80%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
     </linearGradient>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00471b" />
-      <stop offset="100%" stop-color="#00230d" />
-    </linearGradient>
+
+    <!-- Deep Jade Background -->
+    <radialGradient id="iconJadeBg" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#0E4825" />
+      <stop offset="55%" stop-color="#052412" />
+      <stop offset="100%" stop-color="#010D06" />
+    </radialGradient>
+
+    <filter id="iconShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
-  <!-- Background rounded squircle -->
-  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)" stroke="#005e22" stroke-width="2" />
+  <!-- Squircle Base with Gold Edge -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#iconJadeBg)" stroke="url(#iconGold)" stroke-width="2.5" filter="url(#iconShadow)" />
 
-  <!-- Outer Ring -->
-  <circle cx="64" cy="64" r="48" fill="url(#badgeGrad)" opacity="0.9" />
-  <!-- Inner Circle -->
-  <circle cx="64" cy="64" r="43" fill="#003514" />
-  <circle cx="64" cy="64" r="39" fill="none" stroke="#d8fe49" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.7" />
+  <!-- Inner Dotted Beaded Ring -->
+  <circle cx="64" cy="54" r="38" fill="none" stroke="url(#iconGold)" stroke-width="1.2" stroke-dasharray="3, 2" opacity="0.75" />
 
-  <!-- Crown on top -->
-  <path d="M50 36 L57 45 L64 33 L71 45 L78 36 L75 49 L53 49 Z" fill="url(#goldGradIcon)" />
-  <circle cx="50" cy="33" r="2.5" fill="#ffe863" />
-  <circle cx="64" cy="30" r="3" fill="#ffe863" />
-  <circle cx="78" cy="33" r="2.5" fill="#ffe863" />
+  <!-- 5-Point Royal Crown -->
+  <g transform="translate(64, 25)" filter="url(#glow)">
+    <path d="M-17 13 L-12 1 L-4 9 L0 0 L4 9 L12 1 L17 13 Z" fill="url(#iconGold)" />
+    <rect x="-17" y="12" width="34" height="3" rx="1" fill="#FFF2BD" />
+    <!-- Jewels -->
+    <circle cx="-12" cy="1" r="1.6" fill="#FFFFFF" />
+    <circle cx="0" cy="0" r="2.2" fill="#FF3B30" />
+    <circle cx="12" cy="1" r="1.6" fill="#FFFFFF" />
+  </g>
 
-  <!-- BK text -->
-  <text x="64" y="87" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="950" fill="url(#goldGradIcon)" text-anchor="middle" letter-spacing="-1">BK</text>
-  <!-- 99 small tag badge -->
-  <rect x="44" y="93" width="40" height="15" rx="7.5" fill="#d8fe49" />
-  <text x="64" y="104.5" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="950" fill="#003514" text-anchor="middle">99</text>
+  <!-- BPA - BD Text with Athletic Slant -->
+  <g transform="skewX(-6)" filter="url(#iconShadow)">
+    <text x="66" y="75" font-family="system-ui, -apple-system, 'Montserrat', sans-serif" font-size="29" font-weight="950" text-anchor="middle" letter-spacing="-0.5">
+      <tspan fill="url(#iconWhite)">Bpa</tspan>
+      <tspan fill="url(#iconGold)">-Bd</tspan>
+    </text>
+  </g>
+
+  <!-- Bottom Agency Ribbon -->
+  <g transform="translate(64, 98)" filter="url(#iconShadow)">
+    <rect x="-44" y="-11" width="88" height="20" rx="5" fill="#021408" stroke="url(#iconGold)" stroke-width="1.1" />
+    <text x="0" y="3" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="900" fill="#FFF2BD" text-anchor="middle" letter-spacing="1.5">RAZ AGENCY</text>
+  </g>
 </svg>

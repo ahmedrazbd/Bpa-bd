@@ -20,35 +20,36 @@ export const DownloadAppBanner: React.FC<DownloadAppBannerProps> = ({
   return (
     <div
       id="app-download-bar"
-      className="relative w-full bg-gradient-to-r from-[#005e2b] via-[#00700b] to-[#005e2b] text-white px-3 py-2 border-b border-[#008f1f] shadow-md transition-all"
+      className="relative w-full bg-gradient-to-r from-[#032412] via-[#08381c] to-[#032412] text-white px-3 py-2 border-b border-[#0c4a25] shadow-md transition-all"
     >
       <div className="flex items-center justify-between max-w-lg mx-auto">
         {/* App Icon & Text */}
         <div className="flex items-center gap-2.5">
-          <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-[#ffe863] to-[#006519] p-0.5 shadow-sm shrink-0">
-            <div className="w-full h-full rounded-[10px] bg-[#00471b] flex flex-col items-center justify-center">
-              <span className="text-xs font-black text-[#d8fe49] leading-tight">BK99</span>
-              <span className="text-[7px] text-white/90 font-medium">APP</span>
-            </div>
-            <div className="absolute -bottom-1 -right-1 bg-amber-400 text-[#00471b] rounded-full p-0.5 text-[8px] font-bold">
+          <div className="relative w-10 h-10 rounded-xl shadow-md shrink-0">
+            <img
+              src="/bk99-icon.svg"
+              alt="Bpa-Bd App"
+              className="w-full h-full rounded-xl object-contain filter drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+            />
+            <div className="absolute -bottom-1 -right-1 bg-amber-400 text-[#021A0D] rounded-full p-0.5 text-[8px] font-bold shadow-xs">
               ✓
             </div>
           </div>
 
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
-              <span className="font-bold text-sm tracking-tight text-white">Bk99 App</span>
-              <span className="text-[10px] font-semibold px-1.5 py-0.2 bg-[#d8fe49] text-[#004d13] rounded-sm">
+              <span className="font-bold text-sm tracking-tight text-white">Bpa-Bd App</span>
+              <span className="text-[10px] font-bold px-1.5 py-0.2 bg-gradient-to-r from-amber-300 to-amber-400 text-amber-950 rounded-sm shadow-xs">
                 v3.2
               </span>
             </div>
             <div className="flex items-center gap-1 mt-0.5">
-              <div className="flex text-amber-300">
+              <div className="flex text-amber-400">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-2.5 h-2.5 fill-amber-300" />
+                  <Star key={i} className="w-2.5 h-2.5 fill-amber-400" />
                 ))}
               </div>
-              <span className="text-[10px] text-emerald-200">
+              <span className="text-[10px] text-amber-100/80">
                 {language === 'bn' ? 'ফাস্ট ও নিরাপদ' : 'Fast & Secure'}
               </span>
             </div>
@@ -61,7 +62,7 @@ export const DownloadAppBanner: React.FC<DownloadAppBannerProps> = ({
             id="download-app-btn"
             type="button"
             onClick={onDownload}
-            className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-full text-[#004d13] bg-gradient-to-b from-[#f8e64f] to-[#cfea29] shadow-sm hover:scale-105 active:scale-95 transition-transform uppercase tracking-wider"
+            className="flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-full text-[#381F00] bg-gradient-to-r from-[#FFF0A0] via-[#F5B838] to-[#D4830F] shadow-sm hover:brightness-110 active:scale-95 transition-transform uppercase tracking-wider"
           >
             <Download className="w-3.5 h-3.5" />
             <span>{language === 'bn' ? 'ডাউনলোড' : 'Download'}</span>
@@ -71,7 +72,7 @@ export const DownloadAppBanner: React.FC<DownloadAppBannerProps> = ({
             id="close-download-bar-btn"
             type="button"
             onClick={onClose}
-            className="w-7 h-7 flex items-center justify-center text-emerald-200 hover:text-white rounded-full bg-black/20"
+            className="w-7 h-7 flex items-center justify-center text-amber-200/80 hover:text-white rounded-full bg-black/25"
             aria-label="Close download bar"
           >
             <X className="w-4 h-4" />

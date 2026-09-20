@@ -99,8 +99,9 @@ export const ActivityPage: React.FC = () => {
 
   // Promo code voucher redemption
   const handleApplyPromoCode = (code: string) => {
-    if (code === 'BK99VIP' || code === 'WELCOME300' || code === 'CRICKET1000' || code === 'LUCKY99') {
-      const reward = code === 'CRICKET1000' ? 1000 : code === 'BK99VIP' ? 888 : 300;
+    const upperCode = code.toUpperCase();
+    if (upperCode === 'BPABDVIP' || upperCode === 'BK99VIP' || upperCode === 'WELCOME300' || upperCode === 'CRICKET1000' || upperCode === 'LUCKY99' || upperCode === 'RAZVIP') {
+      const reward = upperCode === 'CRICKET1000' ? 1000 : (upperCode === 'BPABDVIP' || upperCode === 'BK99VIP' || upperCode === 'RAZVIP') ? 888 : 300;
       setUserSession((prev) => ({
         ...prev,
         isLoggedIn: true,
@@ -108,8 +109,8 @@ export const ActivityPage: React.FC = () => {
       }));
       return {
         success: true,
-        messageBn: `অভিনন্দন! কোড ${code} সফল হয়েছে এবং ৳${reward} আপনার ব্যালেন্সে যুক্ত করা হয়েছে!`,
-        messageEn: `Success! Voucher ${code} redeemed. ৳${reward} credited to your wallet!`,
+        messageBn: `অভিনন্দন! কোড ${upperCode} সফল হয়েছে এবং ৳${reward} আপনার ব্যালেন্সে যুক্ত করা হয়েছে!`,
+        messageEn: `Success! Voucher ${upperCode} redeemed. ৳${reward} credited to your wallet!`,
       };
     }
     return {
@@ -155,23 +156,23 @@ export const ActivityPage: React.FC = () => {
         />
 
         {/* Announcement Marquee Ticker */}
-        <div className="bg-[#002f12] px-3 py-1.5 flex items-center gap-2 text-xs text-emerald-200 border-b border-[#005e22]">
-          <Volume2 className="w-3.5 h-3.5 text-[#d8fe49] shrink-0" />
+        <div className="bg-[#02180B] px-3 py-1.5 flex items-center gap-2 text-xs text-amber-100 border-b border-[#0c4a25]">
+          <Volume2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
           <div className="overflow-hidden whitespace-nowrap flex-1">
-            <div className="inline-block animate-marquee text-[11px] text-emerald-100 font-medium">
+            <div className="inline-block animate-marquee text-[11px] text-amber-100/90 font-medium">
               {language === 'bn'
-                ? '📢 স্বাগতম Bk99 অফিসিয়াল প্রমোশন সেন্টারে! প্রতি রেফারেলের জন্য পান নিশ্চিত ৳৩০০ বোনাস ও প্রথম জমার ওপর ১০০% পর্যন্ত ওয়েলকাম ক্যাশ!'
-                : '📢 Welcome to Bk99 Official Activity Center! Claim ৳300 instant bonus per referral & 100% welcome match on your first deposit!'}
+                ? '📢 স্বাগতম Bpa-Bd (Raz Agency) অফিসিয়াল প্রমোশন সেন্টারে! প্রতি রেফারেলের জন্য পান নিশ্চিত ৳৩০০ বোনাস ও প্রথম জমার ওপর ১০০% পর্যন্ত ওয়েলকাম ক্যাশ!'
+                : '📢 Welcome to Bpa-Bd (Raz Agency) Official Activity Center! Claim ৳300 instant bonus per referral & 100% welcome match on your first deposit!'}
             </div>
           </div>
         </div>
 
         {/* Page Hero Title / Summary Banner */}
         <div className="px-3 pt-3 pb-1">
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#00471b] via-[#005e24] to-[#00471b] p-3.5 border border-[#00702a] shadow-md">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#032412] via-[#093D20] to-[#032412] p-3.5 border border-[#0f592c] shadow-lg">
             <div className="relative z-10 flex items-center justify-between">
               <div>
-                <div className="flex items-center gap-1.5 text-xs font-bold text-[#d8fe49] uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-amber-400 uppercase tracking-wider">
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>{language === 'bn' ? 'কার্যকলাপ ও বিশেষ প্রচার' : 'Activities & Promotions'}</span>
                 </div>
@@ -191,7 +192,7 @@ export const ActivityPage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setIsPromoCodeOpen(true)}
-                className="shrink-0 flex flex-col items-center justify-center p-2 rounded-xl bg-gradient-to-b from-[#ffe863] to-[#d8fe49] text-[#00471b] shadow-md hover:scale-105 active:scale-95 transition-transform"
+                className="shrink-0 flex flex-col items-center justify-center p-2 rounded-xl bg-gradient-to-b from-[#FFF0A0] via-[#F5B838] to-[#D4830F] text-[#381F00] shadow-md hover:brightness-110 active:scale-95 transition-transform"
               >
                 <Gift className="w-5 h-5" />
                 <span className="text-[9px] font-black uppercase mt-0.5 tracking-tighter">
@@ -279,7 +280,7 @@ export const ActivityPage: React.FC = () => {
               <span>⚡ Fast Payout</span>
               <span>📱 24/7 Support</span>
             </div>
-            <p>© 2026 Bk99 Gaming Entertainment. Licensed &amp; Regulated.</p>
+            <p>© 2026 Bpa-Bd (Raz Agency) Gaming Entertainment. Licensed &amp; Regulated.</p>
             <p className="text-[9px] text-emerald-500">
               Responsible Gaming 18+ • Curacao Gaming License #365/JAZ
             </p>
